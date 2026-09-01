@@ -1,9 +1,6 @@
 欧加真 SM8750/MT6991 系列通用6.6风驰移植内核自动化编译脚本
-
-https://img.shields.io/github/stars/cctv18/oppo_oplus_realme_sm8750?style=flat&logo=github
-https://img.shields.io/github/forks/cctv18/oppo_oplus_realme_sm8750?style=flat&logo=greasyfork&color=%2394E61A
-
-OPPO/一加/真我 骁龙8 Elite(SM8750)/天玑9400+(MT6991) 机型通用内核编译脚本。
+（喵喵喵，源链接https://github.com/cctv18/oppo_oplus_realme_sm8750）
+OPPO K13 Turbo(MT6899)机型内核编译脚本。
 
 特性
 
