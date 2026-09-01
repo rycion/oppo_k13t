@@ -1,10 +1,7 @@
-欧加真 SM8750/MT6991 系列通用6.6风驰移植内核自动化编译脚本
+OPPOk13t内核自动化编译脚本
 （喵喵喵，源链接https://github.com/cctv18/oppo_oplus_realme_sm8750）
 OPPO K13 Turbo(MT6899)机型内核编译脚本。
 
-特性
-
-· OKI/GKI 双编译模式
 · 移植官方 f2fs 源码，GKI 刷入免清 data
 · LLVM/Clang 18 编译，大幅缩短编译时间
 · 内置 ccache-ECS 缓存，二次编译约 6 分钟
