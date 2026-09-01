@@ -263,7 +263,7 @@ jobs:
           # 进入内核工作目录
           cd kernel_workspace
           if [[ ${{ github.event.inputs.ksu_type }} == "sukisu" || ${{ github.event.inputs.ksu_type }} == "resukisu" ]]; then
-            echo "正在配置ReSukiSU（由于SukiSU长期未维护无法正常编译，且ReSukiSU兼容sukisu管理器，故SukiSU源码仓库已重定向为resukisu）..."
+            echo "正在配置ReSukiSU"
             curl -LSs "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh" | bash -s builtin
             echo 'CONFIG_KSU_FULL_NAME_FORMAT="%TAG_NAME%-%COMMIT_SHA%@cctv18"' >> ./common/arch/arm64/configs/gki_defconfig
             cd ./KernelSU
@@ -807,7 +807,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cat << 'EOF' > release_notes.md
-          ### 📱 欧加真 ${{ env.KSU_TYPENAME }} MT6899 通用内核 | 构建信息
+          ### 📱 欧加真 ${{ env.KSU_TYPENAME }} MT6991 通用内核 | 构建信息
           - 内核版本号: ${{ env.FULL_VERSION }}
           - 编译时间: ${{ env.TIME_FORM }}
           - 机型：欧加真天玑9400+通用 ${{ env.KERNEL_VERSION }}.${{ env.SUB_VERSION }} 内核（基于一加Ace5 Ultra ${{ env.KERNEL_VERSION }}.${{ env.SUB_VERSION }} 版官方OKI源码）
