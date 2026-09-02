@@ -274,6 +274,7 @@ jobs:
   
           # 2. 下载并执行本地脚本（此时脚本检测到已存在，不会 clone 和切换分支）
           curl -L -o setup.sh https://raw.gitmirror.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh
+          sed -i '/git pull/d' setup.sh
           bash setup.sh v4.1.3
 
           # 3. 正确写入内核配置
