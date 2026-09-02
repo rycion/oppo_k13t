@@ -130,9 +130,9 @@ jobs:
           rm -f ./ccache &
           
           echo "正在克隆源码仓库..."
-          aria2c -s16 -x16 -k1M https://github.com/cctv18/android_kernel_oneplus_mt6991/archive/refs/heads/oneplus/mt6991_v_15.0.2_ace5_ultra_6.6.89.zip -o common.zip && 
-          unzip -q common.zip && 
-          mv "android_kernel_oneplus_mt6991-oneplus-mt6991_v_15.0.2_ace5_ultra_6.6.89" common &&
+          aria2c -s16 -x16 -k1M https://github.com/oppo-source/android_kernel_oppo_mt6899/archive/refs/heads/oppo/mt6899_b_16.0.0_k13_turbo.zip -o common.zip &&
+          unzip -q common.zip &&
+          mv "android_kernel_oppo_mt6899-oppo-mt6899_b_16.0.0_k13_turbo" common &&
           rm -rf common.zip &
           
           echo "正在克隆llvm-clang18工具链..." &&
