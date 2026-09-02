@@ -261,7 +261,7 @@ jobs:
         id: ksu_version
         run: |
           # 进入内核工作目录
-          cdcd kernel_workspace
+          cd kernel_workspace
           if [[ ${{ github.event.inputs.ksu_type }} == "sukisu" || ${{ github.event.inputs.ksu_type }} == "resukisu" ]]; then
           echo "正在配置SukiSU (v4.1.3)..."
           # 这里不要再 cd kernel_workspace 了！
